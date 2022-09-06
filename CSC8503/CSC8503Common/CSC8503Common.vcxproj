@@ -23,10 +23,14 @@
     <ProjectGuid>{F93B1523-C80E-4CFC-8A88-660866D29C10}</ProjectGuid>
     <RootNamespace>CSC8503Common</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <SccProjectName>Svn</SccProjectName>
-    <SccAuxPath>Svn</SccAuxPath>
-    <SccLocalPath>Svn</SccLocalPath>
-    <SccProvider>SubversionScc</SccProvider>
+    <SccProjectName>
+    </SccProjectName>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccProvider>
+    </SccProvider>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -82,7 +86,8 @@
     <IncludePath>$(SolutionDir)\Plugins\Networking-ENet\include;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <IncludePath>$(SolutionDir)\Plugins\Networking-ENet\include;$(IncludePath)</IncludePath>
+    <IncludePath>$(SolutionDir)\PhysXFiles\include;$(SolutionDir)\Plugins\Networking-ENet\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)\PhysXFiles\include;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <IncludePath>$(SolutionDir)\Plugins\Networking-ENet\include;$(IncludePath)</IncludePath>
@@ -101,6 +106,8 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>Default</LanguageStandard>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -134,45 +141,35 @@
   <ItemGroup>
     <ClInclude Include="AABBVolume.h" />
     <ClInclude Include="CapsuleVolume.h" />
-    <ClInclude Include="NavigationGrid.h" />
-    <ClInclude Include="NavigationMap.h" />
-    <ClInclude Include="NavigationMesh.h" />
-    <ClInclude Include="NavigationPath.h" />
     <ClInclude Include="OBBVolume.h" />
+    <ClInclude Include="PaintableGameObject.h" />
+    <ClInclude Include="PushdownMachine.h" />
+    <ClInclude Include="PushdownState.h" />
     <ClInclude Include="SphereVolume.h" />
     <ClInclude Include="CollisionVolume.h" />
     <ClInclude Include="CollisionDetection.h" />
     <ClInclude Include="Constraint.h" />
     <ClInclude Include="Debug.h" />
     <ClInclude Include="GameObject.h" />
-    <ClInclude Include="GameWorld.h" />
+    <ClInclude Include="Game.h" />
     <ClInclude Include="PhysicsObject.h" />
-    <ClInclude Include="PhysicsSystem.h" />
-    <ClInclude Include="PushdownMachine.h" />
-    <ClInclude Include="PushdownState.h" />
     <ClInclude Include="QuadTree.h" />
     <ClInclude Include="Ray.h" />
     <ClInclude Include="RenderObject.h" />
     <ClInclude Include="State.h" />
-    <ClInclude Include="StateMachine.h" />
-    <ClInclude Include="StateTransition.h" />
     <ClInclude Include="Transform.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CollisionDetection.cpp" />
     <ClCompile Include="Debug.cpp" />
     <ClCompile Include="GameObject.cpp" />
-    <ClCompile Include="GameWorld.cpp" />
-    <ClCompile Include="NavigationGrid.cpp" />
-    <ClCompile Include="NavigationMesh.cpp" />
+    <ClCompile Include="Game.cpp" />
+    <ClCompile Include="PaintableGameObject.cpp" />
     <ClCompile Include="PhysicsObject.cpp" />
-    <ClCompile Include="PhysicsSystem.cpp" />
     <ClCompile Include="PushdownMachine.cpp" />
     <ClCompile Include="PushdownState.cpp" />
     <ClCompile Include="QuadTree.cpp" />
     <ClCompile Include="RenderObject.cpp" />
-    <ClCompile Include="StateMachine.cpp" />
-    <ClCompile Include="StateTransition.cpp" />
     <ClCompile Include="Transform.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

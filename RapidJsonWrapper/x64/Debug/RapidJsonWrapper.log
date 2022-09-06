@@ -1,0 +1,3 @@
+﻿  jsonreader.cpp
+C:\Users\b7079838\Desktop\Github workspace\FinalProject\RapidJsonWrapper\jsonreader.cpp(28,20): warning C4018:  '<': signed/unsigned mismatch
+  RapidJsonWrapper.vcxproj -> C:\Users\b7079838\Desktop\Github workspace\FinalProject\x64\Debug\RapidJsonWrapper.lib

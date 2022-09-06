@@ -37,6 +37,8 @@ OGLShader::OGLShader(const string& vertex, const string& fragment, const string&
 		shaderValid[i]	= 0;
 	}
 	programID = 0;
+	int b = 5;
+	GLint a = b;
 
 	ReloadShader();
 }

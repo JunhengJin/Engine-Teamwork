@@ -3,19 +3,21 @@
 #include "../../Common/TextureBase.h"
 #include "../../Common/ShaderBase.h"
 #include "../../Common/Vector4.h"
+#include "../../Common/Vector4.h"
+#include <vector>
+
 
 namespace NCL {
 	using namespace NCL::Rendering;
 
 	class MeshGeometry;
 	namespace CSC8503 {
-		class Transform;
 		using namespace Maths;
 
 		class RenderObject
 		{
 		public:
-			RenderObject(Transform* parentTransform, MeshGeometry* mesh, TextureBase* tex, ShaderBase* shader);
+			RenderObject(MeshGeometry* mesh, TextureBase* tex, ShaderBase* shader);
 			~RenderObject();
 
 			void SetDefaultTexture(TextureBase* t) {
@@ -30,10 +32,6 @@ namespace NCL {
 				return mesh;
 			}
 
-			Transform*		GetTransform() const {
-				return transform;
-			}
-
 			ShaderBase*		GetShader() const {
 				return shader;
 			}
@@ -42,16 +40,30 @@ namespace NCL {
 				colour = c;
 			}
 
+			/*void SetPaintable(bool paintable) {
+				this->paintable = paintable;
+			}
+
+			bool IsPaintable() {
+				return paintable;
+			}*/
+
+			void SetVertexColors(std::vector<Vector4> colors);
+
+			int GetVertexCount();
+			std::vector<Vector3> GetVertexes();
 			Vector4 GetColour() const {
 				return colour;
 			}
+
+
 
 		protected:
 			MeshGeometry*	mesh;
 			TextureBase*	texture;
 			ShaderBase*		shader;
-			Transform*		transform;
 			Vector4			colour;
+			bool paintable;
 		};
 	}
 }

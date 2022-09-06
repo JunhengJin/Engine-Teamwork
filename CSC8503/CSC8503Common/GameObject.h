@@ -1,11 +1,8 @@
 #pragma once
 #include "Transform.h"
-#include "CollisionVolume.h"
-
-#include "PhysicsObject.h"
 #include "RenderObject.h"
-
 #include <vector>
+#include "../../PhysXEngineWrapper/physics.h"
 
 using std::vector;
 
@@ -16,14 +13,6 @@ namespace NCL {
 		public:
 			GameObject(string name = "");
 			~GameObject();
-
-			void SetBoundingVolume(CollisionVolume* vol) {
-				boundingVolume = vol;
-			}
-
-			const CollisionVolume* GetBoundingVolume() const {
-				return boundingVolume;
-			}
 
 			bool IsActive() const {
 				return isActive;
@@ -37,16 +26,8 @@ namespace NCL {
 				return renderObject;
 			}
 
-			PhysicsObject* GetPhysicsObject() const {
-				return physicsObject;
-			}
-
-			void SetRenderObject(RenderObject* newObject) {
+			virtual void SetRenderObject(RenderObject* newObject) {
 				renderObject = newObject;
-			}
-
-			void SetPhysicsObject(PhysicsObject* newObject) {
-				physicsObject = newObject;
 			}
 
 			const string& GetName() const {
@@ -54,16 +35,28 @@ namespace NCL {
 			}
 
 			virtual void OnCollisionBegin(GameObject* otherObject) {
-				//std::cout << "OnCollisionBegin event occured!\n";
+
 			}
 
 			virtual void OnCollisionEnd(GameObject* otherObject) {
-				//std::cout << "OnCollisionEnd event occured!\n";
+
 			}
 
-			bool GetBroadphaseAABB(Vector3&outsize) const;
+			void AddChild(GameObject* s); //add child to list and set its parent to this and update bounding radius.
+			void RemoveChild(GameObject* s); //remove child from list and set its parent to null. Update bounding radius.
+			void RemoveChildren(); //remove all children, setting their parents to null and update bounding radius.
 
-			void UpdateBroadphaseAABB();
+			//note: remove child doesnt mean delete it from the game!
+
+			float GetBoundingRadius() const; 
+
+			std::vector < GameObject* >::const_iterator GetChildIteratorStart() {
+				return children.begin();
+			}
+
+			std::vector < GameObject* >::const_iterator GetChildIteratorEnd() {
+				return children.end();
+			}
 
 			void SetWorldID(int newID) {
 				worldID = newID;
@@ -73,18 +66,39 @@ namespace NCL {
 				return worldID;
 			}
 
+			void setRigidBody(physx::PxRigidActor* rb) { this->rigidBody = rb; };
+			void setRigidBodyStatic(physx::PxRigidActor* rb) { this->rigidBodyStatic = rb; };
+			physx::PxRigidActor* getRigidBody() { return this->rigidBody; }
+			physx::PxRigidActor* getRigidBodyStatic() { return this->rigidBodyStatic; }
+
+			// Move to player class later 
+			float	GetPitch() const { return pitch; }
+			void	SetPitch(float p) { pitch = p; }
+			float	GetYaw()   const { return yaw; }
+			void	SetYaw(float y) { yaw = y; }
+
+			void setPlayerID(int id) { playerID = id; }
+			int getPlayerID() { return playerID; }
 		protected:
 			Transform			transform;
 
-			CollisionVolume*	boundingVolume;
-			PhysicsObject*		physicsObject;
 			RenderObject*		renderObject;
+
+			float boundingRadius; 
 
 			bool	isActive;
 			int		worldID;
 			string	name;
 
-			Vector3 broadphaseAABB;
+			int playerID = -1;
+			GameObject* parent;
+			physx::PxRigidActor* rigidBody = nullptr;
+			physx::PxRigidActor* rigidBodyStatic = nullptr;
+			std::vector < GameObject* > children;
+
+			// Move to player class later
+			float	yaw;
+			float	pitch;
 		};
 	}
 }

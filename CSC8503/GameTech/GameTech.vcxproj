@@ -79,8 +79,8 @@
     <IncludePath>$(SolutionDir)\Plugins\OpenGLRendering;$(SolutionDir)\Plugins\Networking-ENet\include;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <LibraryPath>$(SolutionDir)$(Platform)\$(Configuration)\;$(LibraryPath)</LibraryPath>
-    <IncludePath>$(SolutionDir)\Plugins\OpenGLRendering;$(SolutionDir)\Plugins\Networking-ENet\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)\Fmod\lib\x64;$(SolutionDir)\PhysXFiles\include;$(SolutionDir)$(Platform)\$(Configuration)\;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(SolutionDir)\Fmod\inc;$(SolutionDir)\NetworkEngine;$(SolutionDir)\PhysXFiles\include;$(SolutionDir)\rapidjson\include;$(SolutionDir)\Plugins\OpenGLRendering;$(SolutionDir)\PhysXEngineWrapper;$(SolutionDir)\Plugins\Networking-ENet\include;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LibraryPath>$(SolutionDir)$(Platform)\$(Configuration)\;$(LibraryPath)</LibraryPath>
@@ -92,10 +92,12 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_WINSOCKAPI_;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>H:\GitHub\FinalProject\Fmod\studio\inc;H:\GitHub\FinalProject\Fmod\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link />
     <Link>
-      <AdditionalDependencies>CSC8503Common.lib;Common.lib;OpenGLRendering.lib;Networking-ENet.lib;ws2_32.lib;Winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>CSC8503Common.lib;Common.lib;OpenGLRendering.lib;Networking-ENet.lib;ws2_32.lib;Winmm.lib;fmod_vc.lib;fmodL_vc.lib;fmodstudio_vc.lib;fmodstudioL_vc.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>H:\GitHub\FinalProject\Fmod\lib\x64;H:\GitHub\FinalProject\Fmod\studio\lib\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -104,9 +106,13 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_WINSOCKAPI_;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <AdditionalIncludeDirectories>$(SolutionDir)\PhysXEngineWrapper;$(SolutionDir)\Fmod\inc;$(SolutionDir)\Fmod\studio\inc</AdditionalIncludeDirectories>
+      <LanguageStandard>Default</LanguageStandard>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>CSC8503Common.lib;Common.lib;OpenGLRendering.lib;Networking-ENet.lib;ws2_32.lib;Winmm.lib;User32.lib;Gdi32.lib</AdditionalDependencies>
+      <AdditionalDependencies>fmod_vc.lib;PhysXEngineWrapper.lib;CSC8503Common.lib;Common.lib;OpenGLRendering.lib;Networking-ENet.lib;NetworkEngine.lib;ws2_32.lib;Winmm.lib;Delegates.lib;User32.lib;opengl32.lib;Gdi32.lib;PhysX_64.lib;LowLevel_static_64.lib;LowLevelAABB_static_64.lib;LowLevelDynamics_static_64.lib;PhysXCharacterKinematic_static_64.lib;PhysXCommon_64.lib;PhysXCooking_64.lib;PhysXExtensions_static_64.lib;PhysXFoundation_64.lib;PhysXPvdSDK_static_64.lib;PhysXTask_static_64.lib;PhysXVehicle_static_64.lib;SceneQuery_static_64.lib;SimulationController_static_64.lib;SnippetRender_static_64.lib;SnippetUtils_static_64.lib;fmodL_vc.lib;fmodstudio_vc.lib;fmodstudioL_vc.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>H:\GitHub\FinalProject\Fmod\lib\x64;H:\GitHub\FinalProject\Fmod\studio\lib\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -141,13 +147,28 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="AssetLoader.cpp" />
+    <ClCompile Include="AssetManager.cpp" />
+    <ClCompile Include="AudioEngine.cpp" />
+    <ClCompile Include="GameManager.cpp" />
     <ClCompile Include="GameTechRenderer.cpp" />
+    <ClCompile Include="InputManager.cpp" />
     <ClCompile Include="Main.cpp" />
-    <ClCompile Include="TutorialGame.cpp" />
+    <ClCompile Include="OnlineManager.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="AssetLoader.h" />
+    <ClInclude Include="AssetManager.h" />
+    <ClInclude Include="AudioEngine.h" />
+    <ClInclude Include="GameManager.h" />
     <ClInclude Include="GameTechRenderer.h" />
-    <ClInclude Include="TutorialGame.h" />
+    <ClInclude Include="InputManager.h" />
+    <ClInclude Include="JsonReader.h" />
+    <ClInclude Include="OnlineManager.h" />
+    <ClInclude Include="Singleton.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram.cd" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

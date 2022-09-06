@@ -1,25 +1,25 @@
-c:\users\b7079838\desktop\8503 release  2021\csc8503\csc8503common\debug\csc8503common.pdb
-c:\users\b7079838\desktop\8503 release  2021\csc8503\csc8503common\debug\csc8503common.idb
-c:\users\b7079838\desktop\8503 release  2021\csc8503\csc8503common\debug\transform.obj
-c:\users\b7079838\desktop\8503 release  2021\csc8503\csc8503common\debug\statetransition.obj
-c:\users\b7079838\desktop\8503 release  2021\csc8503\csc8503common\debug\statemachine.obj
-c:\users\b7079838\desktop\8503 release  2021\csc8503\csc8503common\debug\renderobject.obj
-c:\users\b7079838\desktop\8503 release  2021\csc8503\csc8503common\debug\quadtree.obj
-c:\users\b7079838\desktop\8503 release  2021\csc8503\csc8503common\debug\pushdownstate.obj
-c:\users\b7079838\desktop\8503 release  2021\csc8503\csc8503common\debug\pushdownmachine.obj
-c:\users\b7079838\desktop\8503 release  2021\csc8503\csc8503common\debug\physicssystem.obj
-c:\users\b7079838\desktop\8503 release  2021\csc8503\csc8503common\debug\physicsobject.obj
-c:\users\b7079838\desktop\8503 release  2021\csc8503\csc8503common\debug\navigationmesh.obj
-c:\users\b7079838\desktop\8503 release  2021\csc8503\csc8503common\debug\navigationgrid.obj
-c:\users\b7079838\desktop\8503 release  2021\csc8503\csc8503common\debug\gameworld.obj
-c:\users\b7079838\desktop\8503 release  2021\csc8503\csc8503common\debug\gameobject.obj
-c:\users\b7079838\desktop\8503 release  2021\csc8503\csc8503common\debug\debug.obj
-c:\users\b7079838\desktop\8503 release  2021\csc8503\csc8503common\debug\collisiondetection.obj
-c:\users\b7079838\desktop\8503 release  2021\win32\debug\csc8503common.lib
-c:\users\b7079838\desktop\8503 release  2021\win32\debug\csc8503common.pdb
-c:\users\b7079838\desktop\8503 release  2021\csc8503\csc8503common\debug\csc8503common.tlog\cl.command.1.tlog
-c:\users\b7079838\desktop\8503 release  2021\csc8503\csc8503common\debug\csc8503common.tlog\cl.read.1.tlog
-c:\users\b7079838\desktop\8503 release  2021\csc8503\csc8503common\debug\csc8503common.tlog\cl.write.1.tlog
-c:\users\b7079838\desktop\8503 release  2021\csc8503\csc8503common\debug\csc8503common.tlog\lib-link.read.1.tlog
-c:\users\b7079838\desktop\8503 release  2021\csc8503\csc8503common\debug\csc8503common.tlog\lib-link.write.1.tlog
-c:\users\b7079838\desktop\8503 release  2021\csc8503\csc8503common\debug\csc8503common.tlog\lib.command.1.tlog
+c:\users\c0097744\github\finalproject\csc8503\csc8503common\debug\csc8503common.pdb
+c:\users\c0097744\github\finalproject\csc8503\csc8503common\debug\csc8503common.idb
+c:\users\c0097744\github\finalproject\csc8503\csc8503common\debug\transform.obj
+c:\users\c0097744\github\finalproject\csc8503\csc8503common\debug\renderobject.obj
+c:\users\c0097744\github\finalproject\csc8503\csc8503common\debug\quadtree.obj
+c:\users\c0097744\github\finalproject\csc8503\csc8503common\debug\physicssystem.obj
+c:\users\c0097744\github\finalproject\csc8503\csc8503common\debug\physicsobject.obj
+c:\users\c0097744\github\finalproject\csc8503\csc8503common\debug\networkstate.obj
+c:\users\c0097744\github\finalproject\csc8503\csc8503common\debug\networkobject.obj
+c:\users\c0097744\github\finalproject\csc8503\csc8503common\debug\networkbase.obj
+c:\users\c0097744\github\finalproject\csc8503\csc8503common\debug\gameworld.obj
+c:\users\c0097744\github\finalproject\csc8503\csc8503common\debug\gameserver.obj
+c:\users\c0097744\github\finalproject\csc8503\csc8503common\debug\gameobject.obj
+c:\users\c0097744\github\finalproject\csc8503\csc8503common\debug\gameclient.obj
+c:\users\c0097744\github\finalproject\csc8503\csc8503common\debug\debug.obj
+c:\users\c0097744\github\finalproject\csc8503\csc8503common\debug\collisiondetection.obj
+h:\github\team2\finalproject\win32\debug\csc8503common.lib
+c:\users\c0097744\github\finalproject\win32\debug\csc8503common.lib
+c:\users\c0097744\github\finalproject\win32\debug\csc8503common.pdb
+c:\users\c0097744\github\finalproject\csc8503\csc8503common\debug\csc8503common.tlog\cl.command.1.tlog
+c:\users\c0097744\github\finalproject\csc8503\csc8503common\debug\csc8503common.tlog\cl.read.1.tlog
+c:\users\c0097744\github\finalproject\csc8503\csc8503common\debug\csc8503common.tlog\cl.write.1.tlog
+c:\users\c0097744\github\finalproject\csc8503\csc8503common\debug\csc8503common.tlog\lib-link.read.1.tlog
+c:\users\c0097744\github\finalproject\csc8503\csc8503common\debug\csc8503common.tlog\lib-link.write.1.tlog
+c:\users\c0097744\github\finalproject\csc8503\csc8503common\debug\csc8503common.tlog\lib.command.1.tlog

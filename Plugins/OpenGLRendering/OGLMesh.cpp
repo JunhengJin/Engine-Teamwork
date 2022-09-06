@@ -145,6 +145,15 @@ void OGLMesh::UpdateGPUBuffers(unsigned int startVertex, unsigned int vertexCoun
 	glBindBuffer(GL_ARRAY_BUFFER, 0);
 }
 
+void NCL::Rendering::OGLMesh::UpdateGPUColorBuffer(unsigned int startVertex, unsigned int vertexCount)
+{
+	if (!GetColourData().empty()) {	//buffer colour data
+		glBindBuffer(GL_ARRAY_BUFFER, attributeBuffers[VertexAttribute::Colours]);
+		glBufferSubData(GL_ARRAY_BUFFER, startVertex * sizeof(Vector4), vertexCount * sizeof(Vector4), (char*)& GetColourData()[startVertex]);
+	}
+	glBindBuffer(GL_ARRAY_BUFFER, 0);
+}
+
 
 void OGLMesh::RecalculateNormals() {
 	normals.clear();

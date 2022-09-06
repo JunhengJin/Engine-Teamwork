@@ -1,17 +1,4 @@
-﻿  CollisionDetection.cpp
-  Debug.cpp
-  GameObject.cpp
-  GameWorld.cpp
-  NavigationGrid.cpp
-  NavigationMesh.cpp
-  PhysicsObject.cpp
-  PhysicsSystem.cpp
-  PushdownMachine.cpp
-  PushdownState.cpp
-  QuadTree.cpp
-  RenderObject.cpp
-  StateMachine.cpp
-  StateTransition.cpp
-  Transform.cpp
-  Generating Code...
-  CSC8503Common.vcxproj -> C:\Users\b7079838\Desktop\8503 Release  2021\x64\Debug\CSC8503Common.lib
+﻿  PushdownMachine.cpp
+D:\CGE\CSC8508\Engine Networking\FinalProject\CSC8503\CSC8503Common\PushdownMachine.h(41,1): warning C4150: 删除指向不完整“NCL::CSC8503::PushdownState”类型的指针；没有调用析构函数
+D:\CGE\CSC8508\Engine Networking\FinalProject\CSC8503\CSC8503Common\PushdownMachine.h(6): message : 参见“NCL::CSC8503::PushdownState”的声明
+  CSC8503Common.vcxproj -> D:\CGE\CSC8508\Engine Networking\FinalProject\x64\Debug\CSC8503Common.lib

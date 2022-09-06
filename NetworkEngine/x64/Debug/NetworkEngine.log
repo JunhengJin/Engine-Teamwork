@@ -1,0 +1,7 @@
+﻿  GameClient.cpp
+  GameServer.cpp
+D:\CGE\CSC8508\Engine Networking\FinalProject\NetworkEngine\GameServer.cpp(149,55): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+  NetworkCommon.cpp
+  NetworkUser.cpp
+  正在生成代码...
+  NetworkEngine.vcxproj -> D:\CGE\CSC8508\Engine Networking\FinalProject\x64\Debug\NetworkEngine.lib

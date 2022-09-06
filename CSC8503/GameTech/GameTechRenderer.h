@@ -3,18 +3,18 @@
 #include "../../Plugins/OpenGLRendering/OGLShader.h"
 #include "../../Plugins/OpenGLRendering/OGLTexture.h"
 #include "../../Plugins/OpenGLRendering/OGLMesh.h"
-
-#include "../CSC8503Common/GameWorld.h"
+#include "../CSC8503Common/Game.h"
+#include "../CSC8503Common/Debug.h"
+#include "../..//CppDelegates-master/Delegates.h"
 
 namespace NCL {
 	class Maths::Vector3;
 	class Maths::Vector4;
 	namespace CSC8503 {
-		class RenderObject;
 
 		class GameTechRenderer : public OGLRenderer	{
 		public:
-			GameTechRenderer(GameWorld& world);
+			GameTechRenderer(Game& world);
 			~GameTechRenderer();
 
 		protected:
@@ -25,7 +25,11 @@ namespace NCL {
 
 			OGLShader*		defaultShader;
 
-			GameWorld&	gameWorld;
+			OGLShader* paintMapShader;
+			GLuint splatTex;
+			Vector4 paintColour;
+
+			Game&	gameWorld;
 
 			void BuildObjectList();
 			void SortObjectList();
@@ -35,7 +39,11 @@ namespace NCL {
 
 			void LoadSkybox();
 
-			vector<const RenderObject*> activeObjects;
+			void Paint(PaintableGameObject* po, Matrix4 paintSpaceMatrix, Vector3 direction);
+			void InitializePaintable(PaintableGameObject* po);
+			void CreatePaintMap(PaintableGameObject* po);
+
+			vector<GameObject*> activeObjects;
 
 			OGLShader*  skyboxShader;
 			OGLMesh*	skyboxMesh;
@@ -50,6 +58,8 @@ namespace NCL {
 			Vector4		lightColour;
 			float		lightRadius;
 			Vector3		lightPosition;
+
+			GLuint		paint;
 		};
 	}
 }

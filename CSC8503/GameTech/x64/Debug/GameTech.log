@@ -1,6 +1,37 @@
-﻿  GameTechRenderer.cpp
+﻿  GameManager.cpp
+D:\CGE\CSC8508\Engine Networking\FinalProject\Common\Keyboard.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+D:\CGE\CSC8508\Engine Networking\FinalProject\PhysXEngineWrapper\physics.h(23,23): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+D:\CGE\CSC8508\Engine Networking\FinalProject\CSC8503\CSC8503Common\PaintableGameObject.h(2,10): warning C4067: 预处理器指令后有意外标记 - 应输入换行符
+D:\CGE\CSC8508\Engine Networking\FinalProject\CSC8503\CSC8503Common\PaintableGameObject.h(3,10): warning C4067: 预处理器指令后有意外标记 - 应输入换行符
+D:\CGE\CSC8508\Engine Networking\FinalProject\CSC8503\GameTech\JsonReader.h(49,21): warning C4018: “<”: 有符号/无符号不匹配
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winsock2.h(17,1): warning C4005: “_WINSOCKAPI_”: 宏重定义
+D:\CGE\CSC8508\Engine Networking\FinalProject\CSC8503\GameTech\GameManager.cpp : message : 参见“_WINSOCKAPI_”的前一个定义
+D:\CGE\CSC8508\Engine Networking\FinalProject\CSC8503\CSC8503Common\PushdownMachine.h(41,1): warning C4150: 删除指向不完整“NCL::CSC8503::PushdownState”类型的指针；没有调用析构函数
+D:\CGE\CSC8508\Engine Networking\FinalProject\CSC8503\CSC8503Common\PushdownMachine.h(6): message : 参见“NCL::CSC8503::PushdownState”的声明
+D:\CGE\CSC8508\Engine Networking\FinalProject\CSC8503\GameTech\GameManager.h(51,26): warning C4305: “初始化”: 从“double”到“const float”截断
+D:\CGE\CSC8508\Engine Networking\FinalProject\CSC8503\GameTech\GameManager.cpp(504,42): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+D:\CGE\CSC8508\Engine Networking\FinalProject\CSC8503\GameTech\GameManager.cpp(507,40): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+D:\CGE\CSC8508\Engine Networking\FinalProject\CSC8503\GameTech\GameManager.cpp(508,42): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+D:\CGE\CSC8508\Engine Networking\FinalProject\CSC8503\GameTech\GameManager.cpp(514,29): warning C4305: “初始化”: 从“double”到“float”截断
+D:\CGE\CSC8508\Engine Networking\FinalProject\CSC8503\GameTech\GameManager.cpp(520,16): warning C4244: “初始化”: 从“float”转换到“int”，可能丢失数据
+D:\CGE\CSC8508\Engine Networking\FinalProject\CSC8503\GameTech\GameManager.cpp(521,17): warning C4244: “初始化”: 从“float”转换到“int”，可能丢失数据
+D:\CGE\CSC8508\Engine Networking\FinalProject\CSC8503\GameTech\GameManager.cpp(530,85): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+D:\CGE\CSC8508\Engine Networking\FinalProject\CSC8503\GameTech\GameManager.cpp(536,43): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+D:\CGE\CSC8508\Engine Networking\FinalProject\CSC8503\GameTech\GameManager.cpp(540,41): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
+D:\CGE\CSC8508\Engine Networking\FinalProject\CSC8503\GameTech\GameManager.cpp(544,84): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+D:\CGE\CSC8508\Engine Networking\FinalProject\CSC8503\GameTech\GameManager.cpp(550,43): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+D:\CGE\CSC8508\Engine Networking\FinalProject\CSC8503\GameTech\GameManager.cpp(554,43): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
   Main.cpp
-  TutorialGame.cpp
-  Generating Code...
-C:\Users\b7079838\Desktop\8503 Release  2021\CSC8503\GameTech\Main.cpp(32,12): warning C4244:  'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-  GameTech.vcxproj -> C:\Users\b7079838\Desktop\8503 Release  2021\x64\Debug\GameTech.exe
+D:\CGE\CSC8508\Engine Networking\FinalProject\Common\Keyboard.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+D:\CGE\CSC8508\Engine Networking\FinalProject\PhysXEngineWrapper\physics.h(23,23): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+D:\CGE\CSC8508\Engine Networking\FinalProject\CSC8503\CSC8503Common\PaintableGameObject.h(2,10): warning C4067: 预处理器指令后有意外标记 - 应输入换行符
+D:\CGE\CSC8508\Engine Networking\FinalProject\CSC8503\CSC8503Common\PaintableGameObject.h(3,10): warning C4067: 预处理器指令后有意外标记 - 应输入换行符
+D:\CGE\CSC8508\Engine Networking\FinalProject\CSC8503\GameTech\JsonReader.h(49,21): warning C4018: “<”: 有符号/无符号不匹配
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winsock2.h(17,1): warning C4005: “_WINSOCKAPI_”: 宏重定义
+D:\CGE\CSC8508\Engine Networking\FinalProject\CSC8503\GameTech\Main.cpp : message : 参见“_WINSOCKAPI_”的前一个定义
+D:\CGE\CSC8508\Engine Networking\FinalProject\CSC8503\CSC8503Common\PushdownMachine.h(41,1): warning C4150: 删除指向不完整“NCL::CSC8503::PushdownState”类型的指针；没有调用析构函数
+D:\CGE\CSC8508\Engine Networking\FinalProject\CSC8503\CSC8503Common\PushdownMachine.h(6): message : 参见“NCL::CSC8503::PushdownState”的声明
+D:\CGE\CSC8508\Engine Networking\FinalProject\CSC8503\GameTech\GameManager.h(51,26): warning C4305: “初始化”: 从“double”到“const float”截断
+D:\CGE\CSC8508\Engine Networking\FinalProject\CSC8503\GameTech\Main.cpp(21,12): warning C4244: “参数”: 从“time_t”转换到“unsigned int”，可能丢失数据
+  正在生成代码...
+  GameTech.vcxproj -> D:\CGE\CSC8508\Engine Networking\FinalProject\x64\Debug\GameTech.exe

@@ -1,0 +1,2 @@
+﻿  Assimp.cpp
+C:\Users\b8036881\Documents\FinalProject\Assimp\Assimp.cpp(4,10): error C1083:  Cannot open include file: 'BaseImporter.h': No such file or directory

@@ -1,12 +1,15 @@
-﻿  GameTechRenderer.cpp
-C:\Users\b7079838\Desktop\8503 Release  2021\CSC8503\CSC8503Common\CollisionDetection.h(44,1): warning C4293:  '<<': shift count negative or too big, undefined behavior
+﻿  AssetLoader.cpp
+  AssetManager.cpp
+H:\GitHub\FinalProject\PhysXEngineWrapper\physics.h(2,10): error C1083:  Cannot open include file: 'PxPhysicsAPI.h': No such file or directory
+  GameManager.cpp
+H:\GitHub\FinalProject\PhysXEngineWrapper\physics.h(2,10): error C1083:  Cannot open include file: 'PxPhysicsAPI.h': No such file or directory
+  GameTechRenderer.cpp
+H:\GitHub\FinalProject\PhysXEngineWrapper\physics.h(2,10): error C1083:  Cannot open include file: 'PxPhysicsAPI.h': No such file or directory
+  InputManager.cpp
+H:\GitHub\FinalProject\PhysXEngineWrapper\physics.h(2,10): error C1083:  Cannot open include file: 'PxPhysicsAPI.h': No such file or directory
   Main.cpp
-C:\Users\b7079838\Desktop\8503 Release  2021\CSC8503\CSC8503Common\CollisionDetection.h(45,1): warning C4293:  '<<': shift count negative or too big, undefined behavior
-C:\Users\b7079838\Desktop\8503 Release  2021\CSC8503\CSC8503Common\CollisionDetection.h(44,1): warning C4293:  '<<': shift count negative or too big, undefined behavior
-C:\Users\b7079838\Desktop\8503 Release  2021\CSC8503\CSC8503Common\CollisionDetection.h(45,1): warning C4293:  '<<': shift count negative or too big, undefined behavior
-  TutorialGame.cpp
-C:\Users\b7079838\Desktop\8503 Release  2021\CSC8503\GameTech\Main.cpp(32,12): warning C4244:  'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-C:\Users\b7079838\Desktop\8503 Release  2021\CSC8503\CSC8503Common\CollisionDetection.h(44,1): warning C4293:  '<<': shift count negative or too big, undefined behavior
+H:\GitHub\FinalProject\CSC8503\GameTech\InputManager.h(2,10): error C1083:  Cannot open include file: '..//CSC8503/CSC8503Common/GameObject.h': No such file or directory
+  OnlineManager.cpp
+H:\GitHub\FinalProject\PhysXEngineWrapper\physics.h(2,10): error C1083:  Cannot open include file: 'PxPhysicsAPI.h': No such file or directory
   Generating Code...
-C:\Users\b7079838\Desktop\8503 Release  2021\CSC8503\CSC8503Common\CollisionDetection.h(45,1): warning C4293:  '<<': shift count negative or too big, undefined behavior
-  GameTech.vcxproj -> C:\Users\b7079838\Desktop\8503 Release  2021\Win32\Debug\GameTech.exe
+H:\GitHub\FinalProject\PhysXEngineWrapper\physics.h(2,10): error C1083:  Cannot open include file: 'PxPhysicsAPI.h': No such file or directory

@@ -1,31 +1,18 @@
 ﻿  CollisionDetection.cpp
-C:\Users\b7079838\Desktop\8503 Release  2021\CSC8503\CSC8503Common\CollisionDetection.h(44,1): warning C4293:  '<<': shift count negative or too big, undefined behavior
   Debug.cpp
-C:\Users\b7079838\Desktop\8503 Release  2021\CSC8503\CSC8503Common\CollisionDetection.h(45,1): warning C4293:  '<<': shift count negative or too big, undefined behavior
-C:\Users\b7079838\Desktop\8503 Release  2021\CSC8503\CSC8503Common\Debug.cpp(67,20): warning C4018:  '<': signed/unsigned mismatch
+H:\GitHub\FinalProject\PhysXEngineWrapper\physics.h(2,10): error C1083:  Cannot open include file: 'PxPhysicsAPI.h': No such file or directory
+H:\GitHub\FinalProject\CSC8503\CSC8503Common\Debug.cpp(67,20): warning C4018:  '<': signed/unsigned mismatch
   GameObject.cpp
-C:\Users\b7079838\Desktop\8503 Release  2021\CSC8503\CSC8503Common\Debug.cpp(78,16): warning C4018:  '>=': signed/unsigned mismatch
-C:\Users\b7079838\Desktop\8503 Release  2021\CSC8503\CSC8503Common\CollisionDetection.h(44,1): warning C4293:  '<<': shift count negative or too big, undefined behavior
-  GameWorld.cpp
-C:\Users\b7079838\Desktop\8503 Release  2021\CSC8503\CSC8503Common\CollisionDetection.h(45,1): warning C4293:  '<<': shift count negative or too big, undefined behavior
-C:\Users\b7079838\Desktop\8503 Release  2021\CSC8503\CSC8503Common\CollisionDetection.h(44,1): warning C4293:  '<<': shift count negative or too big, undefined behavior
-  NavigationGrid.cpp
-  NavigationMesh.cpp
+H:\GitHub\FinalProject\CSC8503\CSC8503Common\Debug.cpp(78,16): warning C4018:  '>=': signed/unsigned mismatch
+  Game.cpp
+H:\GitHub\FinalProject\PhysXEngineWrapper\physics.h(2,10): error C1083:  Cannot open include file: 'PxPhysicsAPI.h': No such file or directory
+  PaintableGameObject.cpp
+H:\GitHub\FinalProject\PhysXEngineWrapper\physics.h(2,10): error C1083:  Cannot open include file: 'PxPhysicsAPI.h': No such file or directory
+H:\GitHub\FinalProject\CSC8503\CSC8503Common\PaintableGameObject.h(2,10): warning C4067:  unexpected tokens following preprocessor directive - expected a newline
   PhysicsObject.cpp
-C:\Users\b7079838\Desktop\8503 Release  2021\CSC8503\CSC8503Common\CollisionDetection.h(45,1): warning C4293:  '<<': shift count negative or too big, undefined behavior
-C:\Users\b7079838\Desktop\8503 Release  2021\CSC8503\CSC8503Common\CollisionDetection.h(44,1): warning C4293:  '<<': shift count negative or too big, undefined behavior
-  PhysicsSystem.cpp
-C:\Users\b7079838\Desktop\8503 Release  2021\CSC8503\CSC8503Common\CollisionDetection.h(45,1): warning C4293:  '<<': shift count negative or too big, undefined behavior
-C:\Users\b7079838\Desktop\8503 Release  2021\CSC8503\CSC8503Common\CollisionDetection.h(44,1): warning C4293:  '<<': shift count negative or too big, undefined behavior
-  PushdownMachine.cpp
-  PushdownState.cpp
   QuadTree.cpp
-C:\Users\b7079838\Desktop\8503 Release  2021\CSC8503\CSC8503Common\CollisionDetection.h(45,1): warning C4293:  '<<': shift count negative or too big, undefined behavior
-C:\Users\b7079838\Desktop\8503 Release  2021\CSC8503\CSC8503Common\CollisionDetection.h(44,1): warning C4293:  '<<': shift count negative or too big, undefined behavior
+H:\GitHub\FinalProject\PhysXEngineWrapper\physics.h(2,10): error C1083:  Cannot open include file: 'PxPhysicsAPI.h': No such file or directory
   RenderObject.cpp
-  StateMachine.cpp
-  StateTransition.cpp
   Transform.cpp
   Generating Code...
-C:\Users\b7079838\Desktop\8503 Release  2021\CSC8503\CSC8503Common\CollisionDetection.h(45,1): warning C4293:  '<<': shift count negative or too big, undefined behavior
-  CSC8503Common.vcxproj -> C:\Users\b7079838\Desktop\8503 Release  2021\Win32\Debug\CSC8503Common.lib
+H:\GitHub\FinalProject\PhysXEngineWrapper\physics.h(2,10): error C1083:  Cannot open include file: 'PxPhysicsAPI.h': No such file or directory

@@ -6,5 +6,5 @@
   peer.c
   protocol.c
   win32.c
-  Generating Code...
-  Networking-ENet.vcxproj -> C:\Users\b7079838\Desktop\8503 Release  2021\x64\Debug\Networking-ENet.lib
+  正在生成代码...
+  Networking-ENet.vcxproj -> D:\CGE\CSC8508\Engine Networking\FinalProject\x64\Debug\Networking-ENet.lib

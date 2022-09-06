@@ -1,0 +1,14 @@
+﻿  physics.cpp
+D:\CGE\CSC8508\Engine Networking\FinalProject\PhysXEngineWrapper\Physics.h(23,23): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+D:\CGE\CSC8508\Engine Networking\FinalProject\PhysXEngineWrapper\physics.cpp(278,36): warning C4305: “参数”: 从“double”到“physx::PxReal”截断
+D:\CGE\CSC8508\Engine Networking\FinalProject\PhysXEngineWrapper\physics.cpp(296,34): warning C4305: “参数”: 从“double”到“physx::PxReal”截断
+D:\CGE\CSC8508\Engine Networking\FinalProject\PhysXEngineWrapper\physics.cpp(315,34): warning C4305: “参数”: 从“double”到“physx::PxReal”截断
+D:\CGE\CSC8508\Engine Networking\FinalProject\PhysXEngineWrapper\physics.cpp(342,37): warning C4305: “参数”: 从“double”到“physx::PxReal”截断
+D:\CGE\CSC8508\Engine Networking\FinalProject\PhysXEngineWrapper\physics.cpp(379,37): warning C4305: “参数”: 从“double”到“physx::PxReal”截断
+D:\CGE\CSC8508\Engine Networking\FinalProject\PhysXEngineWrapper\physics.cpp(419,36): warning C4305: “参数”: 从“double”到“physx::PxReal”截断
+  SimulationEvents.cpp
+D:\CGE\CSC8508\Engine Networking\FinalProject\PhysXEngineWrapper\physics.h(23,23): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+  testMain.cpp
+D:\CGE\CSC8508\Engine Networking\FinalProject\PhysXEngineWrapper\Physics.h(23,23): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+  正在生成代码...
+  PhysXEngineWrapper.vcxproj -> D:\CGE\CSC8508\Engine Networking\FinalProject\x64\Debug\PhysXEngineWrapper.lib

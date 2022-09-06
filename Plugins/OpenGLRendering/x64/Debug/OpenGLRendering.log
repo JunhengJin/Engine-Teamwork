@@ -2,9 +2,11 @@
   OGLComputeShader.cpp
   OGLMesh.cpp
   OGLRenderer.cpp
-C:\Users\b7079838\Desktop\8503 Release  2021\Plugins\OpenGLRendering\OGLRenderer.cpp(301,51): warning C4267:  'argument': conversion from 'size_t' to 'unsigned int', possible loss of data
+D:\CGE\CSC8508\Engine Networking\FinalProject\Common\Keyboard.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+D:\CGE\CSC8508\Engine Networking\FinalProject\Plugins\OpenGLRendering\OGLRenderer.cpp(302,51): warning C4267: “参数”: 从“size_t”转换到“unsigned int”，可能丢失数据
+D:\CGE\CSC8508\Engine Networking\FinalProject\Plugins\OpenGLRendering\OGLRenderer.cpp(324,52): warning C4267: “参数”: 从“size_t”转换到“unsigned int”，可能丢失数据
   OGLShader.cpp
   OGLTexture.cpp
-  Generating Code...
-C:\Users\b7079838\Desktop\8503 Release  2021\Plugins\OpenGLRendering\OGLRenderer.cpp(323,52): warning C4267:  'argument': conversion from 'size_t' to 'unsigned int', possible loss of data
-  OpenGLRendering.vcxproj -> C:\Users\b7079838\Desktop\8503 Release  2021\x64\Debug\OpenGLRendering.lib
+D:\CGE\CSC8508\Engine Networking\FinalProject\Common\Keyboard.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  正在生成代码...
+  OpenGLRendering.vcxproj -> D:\CGE\CSC8508\Engine Networking\FinalProject\x64\Debug\OpenGLRendering.lib

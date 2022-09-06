@@ -1,23 +1,50 @@
 #pragma once
 #include "State.h"
+#include <string>
 
 namespace NCL {
 	namespace CSC8503 {
 		class PushdownState :
-			public State
+		public State
 		{
 		public:
 			enum PushdownResult {
 				Push, Pop, NoChange
 			};
-			PushdownState();
-			~PushdownState();
+			PushdownState() {}
+			virtual ~PushdownState() {}
 
-			PushdownResult PushdownUpdate(PushdownState** pushResult);
+			virtual PushdownResult OnUpdate(float dt, PushdownState** pushResult) = 0;
 
 			virtual void OnAwake() {} //By default do nothing
 			virtual void OnSleep() {} //By default do nothing
+
+			std::string GetStateName()
+			{
+				return stateName;
+			}
+
+			void SetStateName(std::string name)
+			{
+				stateName = name;
+			}
+
+			void SetPopTimes(int pt)
+			{
+				popTimes = pt;
+			}
+
+			int GetPopTimes() const
+			{
+				return popTimes;
+			}
+
+		protected:
+			std::string stateName;
+			bool		isPaused = false;
+			int			popTimes = 1;
 		};
+		
 	}
 }
 

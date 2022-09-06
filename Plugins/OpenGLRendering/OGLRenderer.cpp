@@ -119,6 +119,7 @@ void OGLRenderer::EndFrame()		{
 
 void OGLRenderer::SwapBuffers()   {
 	::SwapBuffers(deviceContext);
+
 }
 
 void OGLRenderer::BindShader(ShaderBase*s) {

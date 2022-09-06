@@ -8,9 +8,9 @@
   Matrix4.cpp
   MeshAnimation.cpp
   MeshGeometry.cpp
-C:\Users\b7079838\Desktop\8503 Release  2021\Common\Assets.cpp(45,9): warning C4244:  '=': conversion from 'std::streamoff' to 'size_t', possible loss of data
+H:\GitHub\FinalProject\Common\Assets.cpp(45,9): warning C4244:  '=': conversion from 'std::streamoff' to 'size_t', possible loss of data
   MeshMaterial.cpp
-C:\Users\b7079838\Desktop\8503 Release  2021\Common\MeshGeometry.cpp(283,20): warning C4018:  '<': signed/unsigned mismatch
+H:\GitHub\FinalProject\Common\MeshGeometry.cpp(283,20): warning C4018:  '<': signed/unsigned mismatch
   Mouse.cpp
   Plane.cpp
   Quaternion.cpp
@@ -30,5 +30,5 @@ C:\Users\b7079838\Desktop\8503 Release  2021\Common\MeshGeometry.cpp(283,20): wa
   Win32Window.cpp
   Window.cpp
   Generating Code...
-C:\Users\b7079838\Desktop\8503 Release  2021\Common\MeshMaterial.cpp(64,17): warning C4018:  '>=': signed/unsigned mismatch
-  Common.vcxproj -> C:\Users\b7079838\Desktop\8503 Release  2021\Win32\Debug\Common.lib
+H:\GitHub\FinalProject\Common\MeshMaterial.cpp(64,17): warning C4018:  '>=': signed/unsigned mismatch
+  Common.vcxproj -> H:\GitHub\FinalProject\Win32\Debug\Common.lib

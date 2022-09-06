@@ -25,7 +25,8 @@ namespace NCL {
 			void RecalculateNormals();
 
 			void UploadToGPU(Rendering::RendererBase* renderer = nullptr) override;
-			void UpdateGPUBuffers(unsigned int startVertex, unsigned int vertexCount);
+			void UpdateGPUBuffers(unsigned int startVertex, unsigned int vertexCount) override;
+			void UpdateGPUColorBuffer(unsigned int startVertex, unsigned int vertexCount) override;
 
 		protected:
 			GLuint	GetVAO()			const { return vao;			}

@@ -102,6 +102,7 @@
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
       <PreprocessorDefinitions>GLEW_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
     </ClCompile>
     <Lib>
       <AdditionalDependencies>opengl32.lib</AdditionalDependencies>
@@ -144,6 +145,7 @@
     </Lib>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="glad\glad.h" />
     <ClInclude Include="OGLComputeShader.h" />
     <ClInclude Include="OGLMesh.h" />
     <ClInclude Include="OGLRenderer.h" />
